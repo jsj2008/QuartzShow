@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                updateAlpha = id; 
+                updateCache = id; 
+                updateParameters = id; 
+                updateScaling = id; 
+                updateSize = id; 
+            }; 
+            CLASS = QCImageDownloaderUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alphaButton = NSButton; 
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                cacheButton = NSButton; 
+                filterMenu = NSPopUpButton; 
+                heightField = NSTextField; 
+                mipmapSlider = NSSlider; 
+                scaleMenu = NSPopUpButton; 
+                targetMenu = NSPopUpButton; 
+                widthField = NSTextField; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

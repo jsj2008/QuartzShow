@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setProperty = id; }; 
+            CLASS = QCSplitterUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {classMenu = NSPopUpButton; maxField = NSTextField; minField = NSTextField; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

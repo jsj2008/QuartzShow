@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateRecursive = id; }; 
+            CLASS = QCDirectoryScannerUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {recursiveButton = NSButton; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

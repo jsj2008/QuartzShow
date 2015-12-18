@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>- Private</string>
+		<key>name</key>
+		<string>iTunes Database</string>
+		<key>description</key>
+		<string>Extracts information about the audio tracks in the iTunes database.</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputTracks</key>
+		<dict>
+			<key>description</key>
+			<string>The list of tracks in the iTunes database.</string>
+			<key>name</key>
+			<string>Track List</string>
+		</dict>
+		<key>outputProgress</key>
+		<dict>
+			<key>description</key>
+			<string>The database extraction progress in a [0,1] range.</string>
+			<key>name</key>
+			<string>Progress</string>
+		</dict>
+		<key>outputSignal</key>
+		<dict>
+			<key>description</key>
+			<string>The extraction-done signal.</string>
+			<key>name</key>
+			<string>Done Signal</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

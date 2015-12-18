@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>Source</string>
+		<key>name</key>
+		<string>Folder Images</string>
+		<key>description</key>
+		<string>This patch scans a folder at a given path, possibly recursively, and build a list of the image files it contains.
+
+The folder path is considered absolute if starting with '/', relative to the current user directory if starting with '~' or otherwise relative to the location of the composition file if available.
+
+The scanning starts when the "Scan Signal" input is set to True. When the scanning is finished, the "Done Signal" output is temporarily set to True and the list of image files found is available as a structure on the "File List" output. Each member of this structure is a structure itself describing a single file: the file name, its path and URL are available.
+
+The URLs of those image files can be passed to the Image Downloader patch to load the images dynamically in Quartz Composer.</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputPath</key>
+		<dict>
+			<key>description</key>
+			<string>The path to the folder to scan.</string>
+			<key>name</key>
+			<string>Folder Path</string>
+		</dict>
+		<key>inputSignal</key>
+		<dict>
+			<key>description</key>
+			<string>The scanning signal.</string>
+			<key>name</key>
+			<string>Scan Signal</string>
+		</dict>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputFiles</key>
+		<dict>
+			<key>description</key>
+			<string>The list of image files.</string>
+			<key>name</key>
+			<string>File List</string>
+		</dict>
+		<key>outputSignal</key>
+		<dict>
+			<key>description</key>
+			<string>The scan-finished signal.</string>
+			<key>name</key>
+			<string>Done Signal</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

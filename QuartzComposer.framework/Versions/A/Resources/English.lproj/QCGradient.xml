@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>Renders an horizontal or vertical gradient shading that covers the entire rendering destination and varies between three colors - starting, middle, and ending. This patch also clears the depth buffer.
+
+Assuming the "Blending" input is set to "None", you can use Gradient instead of Clear to clear the rendering destination.</string>
+		<key>name</key>
+		<string>Gradient</string>
+		<key>category</key>
+		<string>Renderer</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputDirection</key>
+		<dict>
+			<key>description</key>
+			<string>Direction of the gradient.</string>
+			<key>name</key>
+			<string>Direction</string>
+			<key>menu</key>
+			<array>
+				<string>Vertical</string>
+				<string>Horizontal</string>
+			</array>
+		</dict>
+		<key>inputColor1</key>
+		<dict>
+			<key>description</key>
+			<string>The starting color of the gradient.</string>
+			<key>name</key>
+			<string>Start Color</string>
+		</dict>
+		<key>inputColor2</key>
+		<dict>
+			<key>description</key>
+			<string>The intermediate color of the gradient.</string>
+			<key>name</key>
+			<string>Middle Color</string>
+		</dict>
+		<key>inputColor3</key>
+		<dict>
+			<key>description</key>
+			<string>The ending color of the gradient.</string>
+			<key>name</key>
+			<string>End Color</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>Samples a numerical value when it receives a signal.</string>
+		<key>name</key>
+		<string>Sample &amp; Hold</string>
+		<key>category</key>
+		<string>- Private</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputValue</key>
+		<dict>
+			<key>description</key>
+			<string>The value to sample.</string>
+			<key>name</key>
+			<string>Value</string>
+		</dict>
+		<key>inputSignal</key>
+		<dict>
+			<key>description</key>
+			<string>The sampling signal.</string>
+			<key>name</key>
+			<string>Sampling Signal</string>
+		</dict>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputValue</key>
+		<dict>
+			<key>description</key>
+			<string>The last sampled value.</string>
+			<key>name</key>
+			<string>Sampled Value</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

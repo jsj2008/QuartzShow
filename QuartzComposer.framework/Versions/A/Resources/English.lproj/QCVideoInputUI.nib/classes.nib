@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                updateParameters = id; 
+                updateSettings = id; 
+                updateSize = id; 
+                updateVideo = id; 
+            }; 
+            CLASS = QCVideoInputUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                filterMenu = NSPopUpButton; 
+                heightField = NSTextField; 
+                highQualityButton = NSButton; 
+                mipmapSlider = NSSlider; 
+                targetMenu = NSPopUpButton; 
+                widthField = NSTextField; 
+                wrapMenu = NSPopUpButton; 
+                yuvButton = NSButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>This patches returns information about the user and his buddies on a given instant messaging service.
+
+The information for the user is available as a structure on the "User Status" output containing her status as a string and as a number (0=Unknown, 1=Offline, 2=Idle, 3=Away, 4=Available) and, if available, her last name, first name and picture.
+
+The list of buddies is available as a structure on the "Buddies Status" output. Each member of that structure is a structure itself describing information for one buddy in a similar way as for the user's information.
+</string>
+		<key>name</key>
+		<string>Instant Messaging Status</string>
+		<key>category</key>
+		<string>- Private</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputStatus</key>
+		<dict>
+			<key>description</key>
+			<string>Status of the current user.</string>
+			<key>name</key>
+			<string>User Status</string>
+		</dict>
+		<key>outputBuddies</key>
+		<dict>
+			<key>description</key>
+			<string>List of buddies on the selected IM service and their status.</string>
+			<key>name</key>
+			<string>Buddies Status</string>
+		</dict>
+	</dict>
+	
+	<key>_personStatusStrings</key>
+	<array>
+		<string>Unknown</string>
+		<string>Offline</string>
+		<string>Idle</string>
+		<string>Away</string>
+		<string>Available</string>
+	</array>
+	
+</dict>
+</plist>

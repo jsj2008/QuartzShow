@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateService = id; }; 
+            CLASS = QCIMServicesUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {servicePopup = NSPopUpButton; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

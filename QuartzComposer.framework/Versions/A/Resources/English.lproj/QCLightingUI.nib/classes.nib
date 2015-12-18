@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addLight = id; removeLight = id; update = id; }; 
+            CLASS = QCLightingUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {twoSideButton = NSButton; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

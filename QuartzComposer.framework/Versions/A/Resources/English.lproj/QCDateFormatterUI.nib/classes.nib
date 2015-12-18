@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = QCDateFormatterUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dateMenu = NSPopUpButton; 
+                formatField = NSTextField; 
+                timeMenu = NSPopUpButton; 
+                zoneButton = NSButton; 
+                zoneMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

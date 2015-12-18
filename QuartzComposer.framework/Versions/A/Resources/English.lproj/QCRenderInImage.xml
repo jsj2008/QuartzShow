@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>Generator</string>
+		<key>name</key>
+		<string>Render in Image</string>
+		<key>description</key>
+		<string>This macro patch renders its subpatches into an image.
+
+Render in Image basically creates a new rendering destination in the form of an image. The subpatches of this macro patch then render to that new destination instead of the original one. The resulting image can be used as any regular image: for example, it can be passed to Core Image filters or used as a mask.
+
+The dimensions of the image can be set in the patch's settings. If set to (0,0), the image dimensions will automatically match the dimensions of the original rendering destination.</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The resulting image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

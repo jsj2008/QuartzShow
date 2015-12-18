@@ -1,0 +1,23 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = QCBillboardUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alignedButton = NSButton; 
+                ciButton = NSButton; 
+                infoBox = NSBox; 
+                squareButton = NSButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

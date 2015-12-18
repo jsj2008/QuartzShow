@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {addExtension = id; removeExtension = id; }; 
+            CLASS = CIOpenGLInfoUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {tableView = NSTableView; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = QCTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}

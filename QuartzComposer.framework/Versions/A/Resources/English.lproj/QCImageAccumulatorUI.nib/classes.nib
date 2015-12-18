@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                updateContinuous = id; 
+                updateFormat = id; 
+                updateParameters = id; 
+                updateSize = id; 
+            }; 
+            CLASS = QCImageAccumulatorUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                continuousButton = NSButton; 
+                filterMenu = NSPopUpButton; 
+                formatMenu = NSPopUpButton; 
+                heightField = NSTextField; 
+                mipmapSlider = NSSlider; 
+                targetMenu = NSPopUpButton; 
+                widthField = NSTextField; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>- Private</string>
+		<key>name</key>
+		<string>GLSL Shader</string>
+		<key>description</key>
+		<string>This macro patch applies a shader written using OpenGL GLSL language.</string>
+	</dict>
+	
+	<key>_sourceTemplates</key>
+	<dict>
+		<key>vertexShader</key>
+		<string>/*
+Input variables:
+- vec4 gl_Color
+- vec4 gl_SecondaryColor
+- vec4 gl_Normal
+- vec4 gl_Vertex,
+- vec4 gl_MultiTexCoord[0..n]
+- float gl_FogCoord
+
+Output variables:
+- vec4 gl_Position
+- float gl_PointSize
+- vec4 gl_ClipVertex
+
+Varying variables:
+- vec4 gl_FrontColor
+- vec4 gl_BackColor
+- vec4 gl_FrontSecondaryColor
+- vec4 gl_BackSecondaryColor
+- vec4 gl_TexCoord[0..n]
+- float gl_FogFragCoord
+*/
+
+void main()
+{
+	gl_Position = ftransform();
+	gl_FrontColor = gl_Color;
+}
+</string>
+		<key>fragmentShader</key>
+		<string>/*
+Output variables:
+- vec4 gl_FragColor
+- float gl_FragDepth
+
+Varying variables:
+- vec4 gl_Color
+- vec4 gl_SecondaryColor
+- vec4 gl_TexCoord[0..n]
+- float gl_FogFragCoord
+*/
+
+void main()
+{
+	gl_FragColor = gl_Color;
+}
+</string>
+	</dict>
+	
+	<key>_sourceKeywords</key>
+	<array>
+		<dict>
+			<key>color</key>
+			<string>R=0.62 G=0.4 B=0.00</string>
+			<key>list</key>
+			<string>
+				hvec2 hvec3 hvec4 dvec2 dvec3 dvec4 fvec2 fvec3 fvec4
+				sampler2DRect sampler3DRect sampler2DRectShadow
+				long short double half fixed unsigned
+				asm class union enum typedef template
+				switch default inline noinline volatile public
+				static extern external interface
+				input output sizeof cast namespace using
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.00 G=0.21 B=0.80</string>
+			<key>list</key>
+			<string>
+				struct void
+				float int bool
+				mat2 mat3 mat4
+				vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4
+				sampler1D sampler2D sampler3D samplerCube sampler1DShadow sampler2DShadow
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.14 G=0.43 B=0.15</string>
+			<key>list</key>
+			<string>
+				attribute const uniform varying
+				break continue do for while return
+				if else
+				in out inout
+				true false
+				discard
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.48 G=0.24 B=0.50</string>
+			<key>list</key>
+			<string>
+				#define #undef
+				#if #ifdef #ifndef #else #elif #endif
+				#error #pragma
+				#extension #version #line
+				__LINE__ __FILE__ __VERSION_
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.54 G=0.07 B=0.08</string>
+			<key>list</key>
+			<string>
+				gl_FrontColor gl_BackColor gl_FrontSecondaryColor gl_BackSecondaryColor
+				gl_TexCoord gl_FogFragCoord gl_Color gl_SecondaryColor gl_Normal gl_Vertex
+				gl_MultiTexCoord0 gl_MultiTexCoord1 gl_MultiTexCoord2 gl_MultiTexCoord3 gl_MultiTexCoord4 gl_MultiTexCoord5 gl_MultiTexCoord6 gl_MultiTexCoord7
+				gl_ModelViewMatrix gl_ProjectionMatrix gl_ModelViewProjectionMatrix
+				gl_TextureMatrix gl_NormalMatrix gl_ModelViewMatrixInverse
+				gl_ProjectionMatrixInverse gl_ModelViewProjectionMatrixInverse gl_TextureMatrixInverse gl_ModelViewMatrixTranspose
+				gl_ProjectionMatrixTranspose gl_ModelViewProjectionMatrixTranspose gl_TextureMatrixTranspose
+				gl_ModelViewMatrixInverseTranspose gl_ProjectionMatrixInverseTranspose gl_ModelViewProjectionMatrixInverseTranspose gl_TextureMatrixInverseTranspose
+				gl_NormalScale gl_DepthRange gl_ClipPlane gl_FogCoord
+				gl_Point gl_FrontMaterial gl_BackMaterial gl_LightSource gl_LightModel
+				gl_FrontLightModelProduct gl_BackLightModelProduct gl_FrontLightProduct gl_BackLightProduct gl_TextureEnvColor
+				gl_EyePlaneQ gl_EyePlaneS gl_EyePlaneT gl_EyePlaneR
+				gl_ObjectPlaneQ gl_ObjectPlaneS gl_ObjectPlaneT gl_ObjectPlaneR
+				gl_Fog gl_FrontFacing gl_FragCoord gl_FragColor gl_FragDepth gl_FragData gl_Position gl_PointSize gl_ClipVertex
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.46 G=0.06 B=0.31</string>
+			<key>list</key>
+			<string>
+				gl_MaxLights gl_MaxClipPlanes gl_MaxTextureUnits gl_MaxFragmentUniformComponents gl_MaxDrawBuffers
+				gl_MaxTextureCoords gl_MaxVertexAttribs gl_MaxVertexUniformComponents gl_MaxVaryingFloats gl_MaxVertexTextureImageUnits
+				gl_MaxCombinedTextureImageUnits gl_MaxTextureImageUnits
+			</string>
+		</dict>	
+		<dict>
+			<key>color</key>
+			<string>R=0.33 G=0.26 B=0.72</string>
+			<key>list</key>
+			<string>
+				degrees radians
+				sin cos tan asin acos atan
+				pow exp log exp2 log2
+				sqrt inversesqrt
+				abs sign floor ceil fract mod
+				min max clamp mix
+				step smoothstep
+				length distance dot cross normalize
+				ftransform faceforward reflect refract matrixCompMult
+				lessThan lessThanEqual greaterThan
+				greaterThanEqual equal notEqual any all not
+				texture1D texture1DProj texture1DLod texture1DProjLod
+				texture2D texture2DProj texture2DLod texture2DProjLod
+				texture3D texture3DProj texture3DLod texture3DProjLod
+				textureCube textureCubeLod
+				shadow1D shadow1DProj shadow1DLod shadow1DProjLod
+				shadow2D shadow2DProj shadow2DLod shadow2DProjLod
+				dFdx dFdy fwidth
+				noise1 noise2 noise3 noise4
+			</string>
+		</dict>
+	</array>
+	
+</dict>
+</plist>

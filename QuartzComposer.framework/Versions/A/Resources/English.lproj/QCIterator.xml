@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>This macro patch renders its subpatches a given number of times.
+
+Iterator it typically used to create loops in the composition similar to for() loops in programming languages. The number of iterations is specified by the "Iterations" input. The index of the current iteration can be passed to the subpatches by using an Iterator Variables patch inside this macro patch.</string>
+		<key>name</key>
+		<string>Iterator</string>
+		<key>category</key>
+		<string>Tool</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputCount</key>
+		<dict>
+			<key>description</key>
+			<string>Number of iterations in the loop.</string>
+			<key>name</key>
+			<string>Iterations</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

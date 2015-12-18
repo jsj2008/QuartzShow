@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {deviceMenu = id; sourceMenu = id; }; 
+            CLASS = QCAudioInputUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {devicePopup = NSPopUpButton; sourcePopup = NSPopUpButton; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

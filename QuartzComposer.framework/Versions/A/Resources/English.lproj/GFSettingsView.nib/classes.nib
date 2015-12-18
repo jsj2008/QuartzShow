@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = GFSettingsColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {
+            CLASS = GFSettingsView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_insideView" = NSView; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

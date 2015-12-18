@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {updateChannels = id; updateControllers = id; updateSources = id; }; 
+            CLASS = CIMidiControllersUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                channelMatrix = NSMatrix; 
+                controllerMenu = NSPopUpButton; 
+                sourceMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

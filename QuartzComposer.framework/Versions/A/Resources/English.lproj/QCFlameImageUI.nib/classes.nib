@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateParameters = id; updateSize = id; }; 
+            CLASS = QCFlameImageUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                filterMenu = NSPopUpButton; 
+                heightField = NSTextField; 
+                mipmapSlider = NSSlider; 
+                targetMenu = NSPopUpButton; 
+                widthField = NSTextField; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

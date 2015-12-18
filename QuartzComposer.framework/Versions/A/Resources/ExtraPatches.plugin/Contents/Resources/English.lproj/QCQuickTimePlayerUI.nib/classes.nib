@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = QCQuickTimePlayerUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                deinterlacingButton = NSButton; 
+                highQualityButton = NSButton; 
+                infoBox = NSBox; 
+                maskCompatibilityButton = NSButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

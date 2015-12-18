@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>This patch implements a configurable input port whose value can be replicated to input ports on other patches.
+
+Splitter is typically used to set the same value on several inputs of various patches at once. The value to set is passed to the Splitter input, which simply forwards it unchanged to its output. From there, the value is transmitted to all the inputs the output is connected to.
+
+Note that by default the splitter input and output are virtual, meaning they can transmit any kind of values. For best performances, you should change whenever possible their type in the patch's settings to the type of the inputs to which the Splitter output is connected.</string>
+		<key>name</key>
+		<string>Input Splitter</string>
+		<key>category</key>
+		<string>Tool</string>
+	</dict>
+	
+	<key>_inAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Input</string>
+		<key>description</key>
+		<string>The input port.</string>
+	</dict>
+	
+	<key>_outAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Output</string>
+		<key>description</key>
+		<string>The output port.</string>
+	</dict>
+	
+</dict>
+</plist>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>This patch performs an arbitrary number of mathematical operations on an initial numerical value.
+
+The operations are applied in sequence starting by applying operation #1 with operand #1 on the initial value. The result is then applied operation #2 with operand #2 and so on...</string>
+		<key>name</key>
+		<string>Math</string>
+		<key>category</key>
+		<string>Numeric</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputValue</key>
+		<dict>
+			<key>description</key>
+			<string>Initial value to apply operations on.</string>
+			<key>name</key>
+			<string>Initial Value</string>
+		</dict>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputValue</key>
+		<dict>
+			<key>description</key>
+			<string>Resulting value after the operations.</string>
+			<key>name</key>
+			<string>Resulting Value</string>
+		</dict>
+	</dict>
+	
+	<key>_operationAttributes</key>
+	<dict>
+		<key>operationName</key>
+		<string>Operation #%i</string>
+		<key>operationDescription</key>
+		<string>The type of operation.</string>
+		<key>operationMenu</key>
+		<array>
+			<string>Add</string>
+			<string>Subtract</string>
+			<string>Multiply</string>
+			<string>Divide</string>
+			<string>Modulo</string>
+			<string>Power</string>
+			<string>Min</string>
+			<string>Max</string>
+		</array>
+		
+		<key>operandName</key>
+		<string>Operand #%i</string>
+		<key>operandDescription</key>
+		<string>The operand value.</string>
+	</dict>
+	
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateType = id; }; 
+            CLASS = QCRendezVousServicesUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {typeComboBox = NSComboBox; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

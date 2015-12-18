@@ -1,0 +1,79 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NFHUDWindow; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {
+            ACTIONS = {
+                editComposition = id; 
+                openComposition = id; 
+                openPreferencePanel = id; 
+                quitApplication = id; 
+                showAboutPanel = id; 
+                showAnimationPreference = id; 
+                showParametersPanel = id; 
+                showScreenSaver = id; 
+                startORstopRendering = id; 
+            }; 
+            CLASS = operationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                AboutWindow = NSWindow; 
+                FileSOwner = NSApplication; 
+                aStatusBar = NSStatusBar; 
+                controlWindow = NSWindow; 
+                executeController = renderController; 
+                maxFPS = NSTextField; 
+                operationMenu = NSMenu; 
+                parametersPanel = NSPanel; 
+                preferenceMenuItem = NSMenuItem; 
+                screenSaverShowController = screenSaverShow; 
+                startORstopMenuItem = NSMenuItem; 
+                theItemInAStatusBar = NSStatusItem; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                setAnimationDirection = id; 
+                setAnimationDuration = id; 
+                setAnimationType = id; 
+            }; 
+            CLASS = preferenceWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blankMenu = NSMenu; 
+                directionSelect = NSPopUpButton; 
+                durationSelect = NSSlider; 
+                effectSelect = NSPopUpButton; 
+                fourTypeMenu = NSMenu; 
+                sixTypeMenu = NSMenu; 
+                swapTypeMenu = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = renderController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                animationControl = preferenceWindowController; 
+                preferenceMenuItem = NSMenuItem; 
+                screenSaverShowController = screenSaverShow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {continueORpause = id; showSceenSaver = id; startORterminate = id; }; 
+            CLASS = screenSaverShow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                listWindow = id; 
+                pauseOrContinue = id; 
+                renderControllerExec = renderController; 
+                screensaverList = id; 
+                startORterminate = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

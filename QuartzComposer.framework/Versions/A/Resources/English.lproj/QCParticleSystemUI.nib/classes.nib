@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {updateDelay = id; updateNum = id; }; 
+            CLASS = CIParticleSystemUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delayField = NSTextField; numField = NSTextField; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

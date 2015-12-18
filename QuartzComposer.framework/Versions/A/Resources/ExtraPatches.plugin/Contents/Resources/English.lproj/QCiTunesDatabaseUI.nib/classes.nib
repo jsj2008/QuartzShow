@@ -1,0 +1,34 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                updateAlpha = id; 
+                updateArtwork = id; 
+                updateMax = id; 
+                updateParameters = id; 
+                updateScaling = id; 
+                updateSize = id; 
+            }; 
+            CLASS = QCiTunesDatabaseUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alphaButton = NSButton; 
+                anisotropySlider = NSSlider; 
+                artworkLoadButton = NSButton; 
+                artworkOnlyButton = NSButton; 
+                borderColor = NSColorWell; 
+                filterMenu = NSPopUpButton; 
+                heightField = NSTextField; 
+                maxField = NSTextField; 
+                mipmapSlider = NSSlider; 
+                scaleMenu = NSPopUpButton; 
+                targetMenu = NSPopUpButton; 
+                widthField = NSTextField; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

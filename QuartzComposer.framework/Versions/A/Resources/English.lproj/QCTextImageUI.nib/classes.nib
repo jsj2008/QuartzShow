@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                updateAttributes = id; 
+                updateLayout = id; 
+                updateParameters = id; 
+                updateSize = id; 
+            }; 
+            CLASS = QCTextImageUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alignmentHMenu = NSPopUpButton; 
+                alignmentVMenu = NSPopUpButton; 
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                filterMenu = NSPopUpButton; 
+                fontMenu = NSPopUpButton; 
+                layoutMatrix = NSMatrix; 
+                mipmapSlider = NSSlider; 
+                targetMenu = NSPopUpButton; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

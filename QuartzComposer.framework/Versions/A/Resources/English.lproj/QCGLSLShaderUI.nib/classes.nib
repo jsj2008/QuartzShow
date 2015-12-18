@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = QCGLSLShaderUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fragmentView = QCSourceTextView; vertexView = QCSourceTextView; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {
+            CLASS = QCSourceTextView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {statusField = id; }; 
+            SUPERCLASS = NSTextView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>This patch retrieves information about the current Quartz Composer environment.
+
+This patch can be used by the composition to know if it's running on an older Quartz Composer implementation with unsupported features, and act accordingly.</string>
+		<key>name</key>
+		<string>Quartz Composer Info</string>
+		<key>category</key>
+		<string>Tool</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputVersion</key>
+		<dict>
+			<key>description</key>
+			<string>Version of the current Quartz Composer environment.</string>
+			<key>name</key>
+			<string>Version</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

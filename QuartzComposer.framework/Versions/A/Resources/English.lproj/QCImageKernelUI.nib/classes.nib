@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateDOD = id; }; 
+            CLASS = QCImageKernelUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dodButton = NSButton; sourceView = QCSourceTextView; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {
+            CLASS = QCSourceTextView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {statusField = id; }; 
+            SUPERCLASS = NSTextView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

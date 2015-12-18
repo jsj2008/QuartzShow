@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = QCClearUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {colorButton = NSButton; depthButton = NSButton; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

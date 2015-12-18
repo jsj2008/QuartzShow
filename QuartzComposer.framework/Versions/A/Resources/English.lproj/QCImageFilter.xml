@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>• Undefined</string>
+		<key>description</key>
+		<string>No description is available for this Core Image filter.</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The resulting image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+	
+	<key>_inputVector</key>
+	<array>
+		<string>%@ (X)</string>
+		<string>%@ (Y)</string>
+		<string>%@ (Z)</string>
+		<string>%@ (W)</string>
+	</array>
+	
+	<key>_inputOpaqueColor</key>
+	<array>
+		<string>%@ (Red)</string>
+		<string>%@ (Green)</string>
+		<string>%@ (Blue)</string>
+	</array>
+	
+	<key>_inputRectangle</key>
+	<array>
+		<string>%@ (Origin X)</string>
+		<string>%@ (Origin Y)</string>
+		<string>%@ (Width)</string>
+		<string>%@ (Height)</string>
+	</array>
+	
+	<key>_inputTransform</key>
+	<array>
+		<string>Origin X</string>
+		<string>Origin Y</string>
+		<string>Scaling X</string>
+		<string>Scaling Y</string>
+		<string>Rotation</string>
+		<string>Translation X</string>
+		<string>Translation Y</string>
+	</array>
+	
+	<key>_filterNote</key>
+	<string>
+
+Note that the image produced by this filter may have infinite dimensions. If this is the case, since Quartz Composer doesn't know how to render such images, you will need to convert it to finite dimensions before rendering it - using a Crop filter for example.
+
+Core Image filters will not produce any image if any of their image inputs are undefined. Be also aware that they expect coordinates expressed in image pixels and not in Quartz Composer units.</string>
+	
+	<key>_filterDescriptions</key>
+	<dict>
+		<key>CIAdditionCompositing</key>
+		<string>Adds color components to achieve a brightening effect. This filter is typically used to add highlights and lens flare effects.</string>
+		<key>CIAffineTile</key>
+		<string>Applies an affine transform to an image and then tiles the transformed image.</string>
+		<key>CIAffineTransform</key>
+		<string>Applies an affine transform to an image. You can scale, translate, or rotate the input image. You can also apply a combination of operations.</string>
+		<key>CIBloom</key>
+		<string>Softens edges and applies a pleasant glow to an image.</string>
+		<key>CIBumpDistortion</key>
+		<string>Creates a bump that originates at a specified point in the image. The bump can be concave or convex.</string>
+		<key>CICheckerboardGenerator</key>
+		<string>Generates a checkerboard pattern. You can specify the checkerboard size and colors, and the sharpness of the pattern.</string>
+		<key>CICircleSplashDistortion</key>
+		<string>Distorts the pixels starting at the circumference of a circle and emanating outward.</string>
+		<key>CICircularScreen</key>
+		<string>Simulates a circular-shaped halftone screen.</string>
+		<key>CICircularWrap</key>
+		<string>Wraps an image around a circle. The circle has an alpha value of 0.0. The distortion of the image increases with the distance from the center of the circle.</string>
+		<key>CIColorBlendMode</key>
+		<string>Uses the luminance values of the background with the hue and saturation values of the source image. This mode preserves the gray levels in the image.</string>
+		<key>CIColorBurnBlendMode</key>
+		<string>Darkens the background image samples to reflect the source image samples. Source image sample values that specify white do not produce a change.</string>
+		<key>CIColorControls</key>
+		<string>Adjusts saturation, brightness, and contrast values.</string>
+		<key>CIColorDodgeBlendMode</key>
+		<string>Brightens the background image samples to reflect the source image samples. Source image sample values that specify black do not produce a change.</string>
+		<key>CIColorInvert</key>
+		<string>Inverts the colors in an image.</string>
+		<key>CIColorMap</key>
+		<string>Performs a nonlinear transformation of source color values using mapping values provided in a table.</string>
+		<key>CIColorMatrix</key>
+		<string>Multiplies source color values and adds a bias factor to each color component.</string>
+		<key>CIColorMonochrome</key>
+		<string>Remaps colors so they fall within shades of a single color.</string>
+		<key>CIColorPosterize</key>
+		<string>Remaps red, green, and blue color components to the number of brightness values you specify for each color component. This filter flattens colors to achieve a look similar to that of a silk-screened poster.</string>
+		<key>CIConstantColorGenerator</key>
+		<string>Generates a solid color. You typically use the output of this filter as the input to another filter.</string>
+		<key>CICopyMachineTransition</key>
+		<string>Transitions from one image to another by simulating the effect of a copy machine.</string>
+		<key>CICrop</key>
+		<string>Applies a crop to an image. The size and shape of the cropped image depend on the rectangle you specify.</string>
+		<key>CICrystallize</key>
+		<string>Creates polygon-shaped color blocks by aggregating source pixel-color values.</string>
+		<key>CIDarkenBlendMode</key>
+		<string>Creates composite image samples by choosing the darker samples (from either the source image or the background). The result is that the background image samples are replaced by any source image samples that are darker. Otherwise, the background image samples are left unchanged.</string>
+		<key>CIDifferenceBlendMode</key>
+		<string>Subtracts either the source image sample color from the background image sample color, or the reverse, depending on which sample has the greater brightness value. Source image sample values that are black produce no change; white inverts the background color values.</string>
+		<key>CIDisintegrateWithMaskTransition</key>
+		<string>Transitions from one image to another using the shape defined by a mask.</string>
+		<key>CIDisplacementDistortion</key>
+		<string>Applies the grayscale values of the second image to the first image. The output image has a texture defined by the grayscale values.</string>
+		<key>CIDissolveTransition</key>
+		<string>Uses a dissolve to transition from one image to another.</string>
+		<key>CIDotScreen</key>
+		<string>Simulates the dot patterns of a halftone screen.</string>
+		<key>CIEdgeWork</key>
+		<string>Produces a stylized black-and-white rendition of an image that looks similar to a woodblock cutout.</string>
+		<key>CIEdges</key>
+		<string>Finds all edges in an image and displays them in color.</string>
+		<key>CIExclusionBlendMode</key>
+		<string>Produces an effect similar to that produced by Difference Blend Mode but with lower contrast. Source image sample values that are black don’t produce a change; white inverts the background color values.</string>
+		<key>CIExposureAdjust</key>
+		<string>Adjusts the exposure setting for an image similar to the way you control exposure for a camera when you change the F-stop.</string>
+		<key>CIFalseColor</key>
+		<string>Maps luminance to a color ramp of two colors. False color is often used to process astronomical and other scientific data, such as ultraviolet and x-ray images.</string>
+		<key>CIFlashTransition</key>
+		<string>Transitions from one image to another by creating a flash. The flash originates from a point you specify. Small at first, it rapidly expands until the image frame is completely filled with the flash color. As the color fades, the target image begins to appear.</string>
+		<key>CIGammaAdjust</key>
+		<string>Adjusts midtone brightness. This filter is typically used to compensate for nonlinear effects of displays. Adjusting the gamma effectively changes the slope of the transition between black and white.</string>
+		<key>CIGaussianBlur</key>
+		<string>Spreads source pixels by an amount specified by a Gaussian distribution.</string>
+		<key>CIGaussianGradient</key>
+		<string>Generates a gradient that varies from one color to another using a Gaussian distribution.</string>
+		<key>CIGlassDistortion</key>
+		<string>Distorts an image by applying a glass-like texture. The raised portions of the output image are the result of applying a texture map.</string>
+		<key>CIGlassLozenge</key>
+		<string>Creates a lozenge-shaped lens and distorts the portion of the image over which the lens is placed.</string>
+		<key>CIGloom</key>
+		<string>Dulls the highlights of an image.</string>
+		<key>CIHardLightBlendMode</key>
+		<string>Either multiplies or screens colors, depending on the source image sample color. If the source image sample color is lighter than 50% gray, the background is lightened, similar to screening. If the source image sample color is darker than 50% gray, the background is darkened, similar to multiplying. If the source image sample color is equal to 50% gray, the source image is not changed. Image samples that are equal to pure black or pure white result in pure black or white. The overall effect is similar to what you’d achieve by shining a harsh spotlight on the source image.</string>
+		<key>CIHatchedScreen</key>
+		<string>Simulates the hatched pattern of a halftone screen.</string>
+		<key>CIHoleDistortion</key>
+		<string>Creates a circular area that pushes the image pixels outward, distorting those pixels closest to the circle the most.</string>
+		<key>CIHueAdjust</key>
+		<string>Changes the overall hue, or tint, of the source pixels.</string>
+		<key>CIHueBlendMode</key>
+		<string>Uses the luminance and saturation values of the background with the hue of the source image.</string>
+		<key>CILenticularHaloGenerator</key>
+		<string>Simulates a halo that is generated by the diffraction associated with the spread of a lens. This filter is typically applied to another image to simulate lens flares and similar effects.</string>
+		<key>CILightenBlendMode</key>
+		<string>Creates composite image samples by choosing the lighter samples (either from the source image or the background). The result is that the background image samples are replaced by any source image samples that are lighter. Otherwise, the background image samples are left unchanged.</string>
+		<key>CILineScreen</key>
+		<string>Simulates the line pattern of a halftone screen.</string>
+		<key>CILinearGradient</key>
+		<string>Generates a gradient that varies along a linear axis, between two defined endpoints.</string>
+		<key>CILuminosityBlendMode</key>
+		<string>Uses the hue and saturation of the background with the luminance of the source image. This mode creates an effect that is inverse to the effect created by Color Blend Mode.</string>
+		<key>CIMaximumCompositing</key>
+		<string>Computes the maximum value, by color component, of two input images and creates an output image using the maximum values. This is similar to dodging.</string>
+		<key>CIMedianFilter</key>
+		<string>Computes the median value for a group of neighboring pixels and replaces each pixel value with the median. The effect is to reduce noise.</string>
+		<key>CIMinimumCompositing</key>
+		<string>Computes the minimum value, by color component, of two input images and creates an output image using the minimum values. This is similar to burning.</string>
+		<key>CIModTransition</key>
+		<string>Transitions from one image to another by revealing the target image through irregularly shaped holes.</string>
+		<key>CIMotionBlur</key>
+		<string>Blurs an image to simulate the effect of using a camera that moves a specified angle and distance while capturing the image.</string>
+		<key>CIMultiplyBlendMode</key>
+		<string>Multiplies the source image samples with the background image samples. This results in colors that are at least as dark as either of the two contributing sample colors.</string>
+		<key>CIMultiplyCompositing</key>
+		<string>Multiplies the color component of two input images and creates an output image using the multiplied values. This filter is typically used to add a spotlight or similar lighting effect to an image.</string>
+		<key>CIOpTile</key>
+		<string>Segments an image, applying any specified scaling and rotation, and then assembles the image again to give an op art appearance.</string>
+		<key>CIOverlayBlendMode</key>
+		<string>Either multiplies or screens the source image samples with the background image samples, depending on the background color. The result is to overlay the existing image samples while preserving the highlights and shadows of the background. The background color mixes with the source image to reflect the lightness or darkness of the background.</string>
+		<key>CIPageCurlTransition</key>
+		<string>Transitions from one image to another by simulating a curling page, revealing the new image as the page curls.</string>
+		<key>CIParallelogramTile</key>
+		<string>Warps an image by reflecting it in a parallelogram, and then tiles the result.</string>
+		<key>CIPerspectiveTile</key>
+		<string>Applies a perspective transform to an image and then tiles the result.</string>
+		<key>CIPerspectiveTransform</key>
+		<string>Alters the geometry of an image to simulate the observer changing viewing position. You can use the perspective filter to skew an image.</string>
+		<key>CIPinchDistortion</key>
+		<string>Creates a rectangular-shaped area that pinches source pixels inward, distorting those pixels closest to the rectangle the most.</string>
+		<key>CIPixellate</key>
+		<string>Makes an image blocky.</string>
+		<key>CIRadialGradient</key>
+		<string>Generates a gradient that varies radially between two circles having the same center. Note that it is valid for one of the two circles to have a radius of 0.</string>
+		<key>CIRippleTransition</key>
+		<string>Transitions from one image to another by creating a circular wave that expands from the center point, revealing the new image in the wake of the wave.</string>
+		<key>CISaturationBlendMode</key>
+		<string>Uses the luminance and hue values of the background with the saturation of the source image. Areas of the background that have no saturation (that is, pure gray areas) don’t produce a change.</string>
+		<key>CIScreenBlendMode</key>
+		<string>Multiplies the inverse of the source image samples with the inverse of the background image samples. This results in colors that are at least as light as either of the two contributing sample colors.</string>
+		<key>CISepiaTone</key>
+		<string>Maps the colors of an image to various shades of brown.</string>
+		<key>CISoftLightBlendMode</key>
+		<string>Either darkens or lightens colors, depending on the source image sample color. If the source image sample color is lighter than 50% gray, the background is lightened, similar to dodging. If the source image sample color is darker than 50% gray, the background is darkened, similar to burning. If the source image sample color is equal to 50% gray, the background is not changed. Image samples that are equal to pure black or pure white produce darker or lighter areas, but do not result in pure black or white. The overall effect is similar to what you’d achieve by shining a diffuse spotlight on the source image.</string>
+		<key>CISourceAtopCompositing</key>
+		<string>Places the source image over the background image, then uses the luminance of the background image to determine what to show. The composite shows the background image and only those portions of the source image that are over visible parts of the background.</string>
+		<key>CISourceInCompositing</key>
+		<string>Uses the second image to define what to leave in the source image, effectively cropping the image.</string>
+		<key>CISourceOutCompositing</key>
+		<string>Uses the second image to define what to take out of the first image.</string>
+		<key>CISourceOverCompositing</key>
+		<string>Places the second image over the first.</string>
+		<key>CISpotLight</key>
+		<string>Applies a directional spotlight effect to an image.</string>
+		<key>CIStarShineGenerator</key>
+		<string>Generates a starburst pattern. The output image is typically used as input to another filter</string>
+		<key>CIStripesGenerator</key>
+		<string>Generates a stripe pattern. You can control the color of the stripes, the spacing, and the contrast.</string>
+		<key>CISunbeamsGenerator</key>
+		<string>Generates a sun effect. You typically use the output of the sunbeams filter as input to a composite filter.</string>
+		<key>CISwipeTransition</key>
+		<string>Transitions from one image to another by simulating a swiping action.</string>
+		<key>CITorusLensDistortion</key>
+		<string>Creates a torus-shaped lens and distorts the portion of the image over which the lens is placed.</string>
+		<key>CITriangleTile</key>
+		<string>Maps a triangular portion of image to a triangular area and then tiles the result.</string>
+		<key>CITwirlDistortion</key>
+		<string>Rotates pixels around a point to give a twirling effect. You can specify the number of rotations as well as the center and radius of the effect.</string>
+		<key>CIUnsharpMask</key>
+		<string>Increases the contrast of the edges between pixels of different colors in an image.</string>
+		<key>CIVortexDistortion</key>
+		<string>Rotates pixels around a point to simulate a vortex. You can specify the number of rotations as well the center and radius of the effect. </string>
+		<key>CIWhitePointAdjust</key>
+		<string>Adjusts the reference white point for an image and maps all colors in the source using the new reference.</string>
+		<key>CIZoomBlur</key>
+		<string>Simulates the effect of zooming the camera while capturing the image.</string>
+		<key>CIShadedMaterial</key>
+		<string>Produces a shaded image from a height field. The height field is defined to have greater heights with lighter shades, and lesser heights (lower areas) with darker shades. You can combine this filter with the Height Field From Mask filter to produce quick shadings of masks, such as text.</string>
+		<key>CIPointillize</key>
+		<string>Renders the source image in a pointillistic style.</string>
+		<key>CIHeightFieldFromMask</key>
+		<string>Produces a continuous three-dimensional, loft-shaped height field from a grayscale mask. The white values of the mask define those pixels that are inside the height field while the black values define those pixels that are outside. The field varies smoothly and continuously inside the mask, reaching the value 0 at the edge of the mask. You can use this filter with the Shaded Material filter to produce extremely realistic shaded objects.</string>
+		<key>CIBlendWithMask</key>
+		<string>Uses values from a grayscale mask to interpolate between an image and the background. When a mask value is 0.0, the result is the background. When the mask value is 1.0, the result is the image.</string>
+		<key>CISharpenLuminance</key>
+		<string>Increases image detail by sharpening. It operates on the luminance of the image; the chrominance of the pixels remains unaffected.</string>
+		<key>CICMYKHalftone</key>
+		<string>Creates a color, halftoned rendition of the source image, using cyan, magenta, yellow, and black inks over a white page.</string>
+		<key>CILanczosScaleTransform</key>
+		<string>Produces a high-quality, scaled version of a source image. You typically use this filter to scale down an image.</string>
+		<key>CIRandomGenerator</key>
+		<string>Generates an image of infinite extent whose pixel values are made up of four independent, uniformly-distributed random numbers in the 0–1 range.</string>
+		<key>CIMaskToAlpha</key>
+		<string>Converts a grayscale image to a white image that is masked by alpha. The white values from the source image produce the inside of the mask; the black values become completely transparent.</string>
+		<key>CIColorCube</key>
+		<string>Uses a a three-dimensional color table to transform the source image pixels. The color table must be  composed of floating-point RGBA cells that use premultiplied alpha. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.</string>
+		<key>CINoiseReduction</key>
+		<string>Reduces noise using a threshold value to define what’s noise. Small changes in luminance below that value are considered noise and get a noise reduction treatment, which is a local blur. Changes above the threshold value are considered edges, so they are sharpened.</string>
+		<key>CIKaleidoscope</key>
+		<string>Produces a kaleidoscopic image from a source image by applying 12-way symmetry.</string>
+		<key>CIAffineClamp</key>
+		<string>Performs an affine transform on a source image and then clamps the pixels at the edge of the transformed image, extending them outwards. This filter performs similarly to the Affine Transform filter except that it produces an image with infinite extent. You can use this filter when you need to blur an image but you want to avoid a soft, black fringe along the edges.</string>
+	</dict>
+	
+</dict>
+</plist>

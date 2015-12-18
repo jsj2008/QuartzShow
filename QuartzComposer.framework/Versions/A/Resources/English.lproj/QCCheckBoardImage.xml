@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>- Private</string>
+		<key>name</key>
+		<string>Checkerboard Image</string>
+		<key>description</key>
+		<string>Generates a simple black-and-white checkerboard image.</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputAnisotropy</key>
+		<dict>
+			<key>description</key>
+			<string>The anisotropy when texturing with that image.</string>
+			<key>name</key>
+			<string>Anisotropy</string>
+		</dict>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The resulting image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

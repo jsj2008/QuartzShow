@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {"_selectItem" = id; }; 
+            CLASS = GFGraphBrowserView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_insideView" = NSView; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

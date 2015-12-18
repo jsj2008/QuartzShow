@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>description</key>
+		<string>This patch executes a JavaScript with an arbitrary number of input / output parameters.
+
+Values passed to the inputs of the patch are available in JavaScript through the global array variable "inputs": for example, use "inputs[2]" to get the value on the input #2. Only a restricted set of Quartz Composer types is supported: Boolean, Index, Number, String or Structure. Structures are converted to generic JavaScript objects whose properties are the structure members.
+
+Values can be sent to the outputs of the patch from JavaScript using the global array variable "outputs". The same restrictions apply regarding the value types as for the inputs.
+
+Note that only the core JavaScript classes are supported: Boolean, Number, String, Math, Object, Array, Date and RegExp.
+Use the "Log()" function to send a text message to the Quartz Composer log: for example, "Log("bonjour")".</string>
+		<key>name</key>
+		<string>JavaScript</string>
+		<key>category</key>
+		<string>Tool</string>
+	</dict>
+	
+	<key>_ioAttributes</key>
+	<dict>
+		<key>inputName</key>
+		<string>Input #%i</string>
+		<key>inputDescription</key>
+		<string>A value.</string>
+		<key>outputName</key>
+		<string>Output #%i</string>
+		<key>outputDescription</key>
+		<string>A value.</string>
+	</dict>
+	
+	<key>_sourceTemplates</key>
+	<dict>
+		<key>script</key>
+		<string>/*
+A simple script that takes two input values, sums them and returns the result.
+*/
+
+outputs[0] = inputs[0] + inputs[1];
+</string>
+	</dict>
+	
+	<key>_sourceKeywords</key>
+	<array>
+		<dict>
+			<key>color</key>
+			<string>R=0.54 G=0.07 B=0.08</string>
+			<key>list</key>
+			<string>inputs outputs</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.00 G=0.21 B=0.80</string>
+			<key>list</key>
+			<string>
+				this undefined null
+				true false Infinity NaN
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.14 G=0.43 B=0.15</string>
+			<key>list</key>
+			<string>
+				function switch do for while in if then else return break continue case default
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.46 G=0.06 B=0.31</string>
+			<key>list</key>
+			<string>
+				Log
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.33 G=0.26 B=0.72</string>
+			<key>list</key>
+			<string>
+				var new
+				Function Object Number Boolean Array Date String RegExp Math
+				parseInt parseFloat
+				typeof
+			</string>
+		</dict>
+	</array>
+	
+</dict>
+</plist>

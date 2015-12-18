@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateChannels = id; updateOctaves = id; updateSources = id; }; 
+            CLASS = QCMidiNotesUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                channelMatrix = NSMatrix; 
+                octaveMatrix = NSMatrix; 
+                sourceMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

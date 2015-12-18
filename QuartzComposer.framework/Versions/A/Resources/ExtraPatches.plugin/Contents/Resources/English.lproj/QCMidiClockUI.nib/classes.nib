@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateChannels = id; updateSources = id; }; 
+            CLASS = QCMidiClockUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {channelMatrix = NSMatrix; sourceMenu = NSPopUpButton; }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

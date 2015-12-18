@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {"_menuSelect" = id; "_nextPanel" = id; "_previousPanel" = id; }; 
+            CLASS = GFGraphEditorInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_menu" = NSPopUpButton; "_panel" = NSPanel; "_text" = NSTextField; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

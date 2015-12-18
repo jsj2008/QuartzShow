@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateInterpolation = id; }; 
+            CLASS = QCInterpolationUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {interpolationMatrix = NSMatrix; splineView = QCSplineView; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {
+            ACTIONS = {updateControlPoint = id; }; 
+            CLASS = QCSplineView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {timeField = NSTextField; valueField = NSTextField; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

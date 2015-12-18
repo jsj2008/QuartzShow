@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>Generator</string>
+		<key>name</key>
+		<string>Video Input</string>
+		<key>description</key>
+		<string>This patch captures the video data coming from a given video input device and returns it as an image.
+
+If the image dimensions are set to (0,0), the resulting image will have the size of the video input's native resolution, otherwise, the incoming video images will be scaled to those dimensions. If the "Highest Quality" setting is active, then QuickTime will attempt to perform a high-quality and deinterlaced decompression of the incoming video images - this may affect performance.
+
+Note that only one instance of this patch can be running at the same time.</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The resulting image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = CIRandomUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {variabilityField = NSTextField; variabilitySlider = NSSlider; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

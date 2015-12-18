@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {addPort = id; removePort = id; setClass = id; }; 
+            CLASS = CIMultiplexerUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {classMenu = NSPopUpButton; }; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

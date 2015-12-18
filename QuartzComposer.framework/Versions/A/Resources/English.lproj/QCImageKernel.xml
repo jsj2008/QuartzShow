@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>Tool</string>
+		<key>name</key>
+		<string>Core Image Kernel</string>
+		<key>description</key>
+		<string>This patch implements an image processing kernel written using a subset of OpenGL Shading Language and the Core Image extensions (refer to the OpenGL and Core Image documentations for a description of the language).
+
+The inputs from this patch are automatically created according to the prototype of the kernel function: "float", "vec2", "vec3" and "vec4" parameters are turned into number inputs, "__color" parameters into color inputs and "sampler" parameters into image inputs. Be aware that changing the name of a kernel function parameter will break the connections to the related input.
+This patch always has a single output image, which represents the result produced by the kernel.
+
+By default the domain of definition of the resulting image is defined as the union of the input images used by the kernel. If there are no input images or that behavior has been disabled in the patch's settings, the resulting image will have infinite dimensions. Because Quartz Composer doesn't know how to render such images, you will need to convert it to finite dimensions before rendering it - using a Crop filter for example.
+
+Note that this patch will not produce any image if any of its image inputs is undefined.</string>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The resulting image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+	
+	<key>_sourceTemplates</key>
+	<dict>
+		<key>sourceCode</key>
+		<string>/*
+A Core Image kernel routine that computes a multiply effect. The code looks up the source pixel in the sampler and then multiplies it by the value passed to the routine.
+*/
+
+kernel vec4 multiplyEffect(sampler image, __color color)
+{
+	return sample(image, samplerCoord(image)) * color;
+}
+</string>
+	</dict>
+	
+	<key>_sourceKeywords</key>
+	<array>
+		<dict>
+			<key>color</key>
+			<string>R=0.54 G=0.07 B=0.08</string>
+			<key>list</key>
+			<string>kernel __color sampler</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.00 G=0.21 B=0.80</string>
+			<key>list</key>
+			<string>
+				void bool int float
+				vec2 vec3 vec4
+				bvec2 bvec3 bvec4
+				ivec2 ivec3 ivec4
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.14 G=0.43 B=0.15</string>
+			<key>list</key>
+			<string>
+				attribute const uniform varying
+				do for while if else return
+				in out inout
+				true false
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.46 G=0.06 B=0.31</string>
+			<key>list</key>
+			<string>
+				compare
+				cos_ cossin cossin_ sin_ sincos sincos_ tan_
+				destCoord
+				premultiply unpremultiply
+				sample samplerCoord samplerExtent samplerOrigin samplerSize samplerTransform
+			</string>
+		</dict>
+		<dict>
+			<key>color</key>
+			<string>R=0.33 G=0.26 B=0.72</string>
+			<key>list</key>
+			<string>
+				radians degrees
+				sin cos tan asin acos atan
+				pow exp log exp2 log2 sqrt inversesqrt
+				abs sign
+				floor cell fract mod
+				min
+				max
+				clamp
+				mix
+				step smoothstep
+				length distance
+				dot cross
+				normalize
+				faceforward
+				reflect
+				lessThan lessThanEqual greaterThan greaterThanEqual equal notEqual
+				any all not
+			</string>
+		</dict>
+	</array>
+	
+</dict>
+</plist>

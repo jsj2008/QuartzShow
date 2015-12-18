@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateParameters = id; updateSize = id; }; 
+            CLASS = QCImageFilterUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                filterMenu = NSPopUpButton; 
+                mipmapSlider = NSSlider; 
+                targetMenu = NSPopUpButton; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

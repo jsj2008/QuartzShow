@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = QCFileImageView; LANGUAGE = ObjC; SUPERCLASS = NSImageView; }, 
+        {
+            ACTIONS = {
+                import = id; 
+                reset = id; 
+                updateAlpha = id; 
+                updateCache = id; 
+                updateParameters = id; 
+                updateScaling = id; 
+                updateSize = id; 
+            }; 
+            CLASS = QCImageLoaderUI; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alphaButton = NSButton; 
+                anisotropySlider = NSSlider; 
+                borderColor = NSColorWell; 
+                filterMenu = NSPopUpButton; 
+                imageView = QCFileImageView; 
+                mipmapSlider = NSSlider; 
+                targetMenu = NSPopUpButton; 
+                wrapMenu = NSPopUpButton; 
+            }; 
+            SUPERCLASS = QCInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

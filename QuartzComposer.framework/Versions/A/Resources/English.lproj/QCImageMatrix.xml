@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>nodeAttributes</key>
+	<dict>
+		<key>copyright</key>
+		<string>Apple Computer, Inc. 2003-2004</string>
+		<key>category</key>
+		<string>Modifier</string>
+		<key>name</key>
+		<string>Image Texturing Matrix</string>
+		<key>description</key>
+		<string>This patch modifies the texturing matrix of an image.
+
+The texturing matrix is used by Quartz Composer to apply a geometrical transformation to the image when it is used as a texture: this does not affect the image contents. Changing this matrix is typically useful in combination with other texturing settings of the image like its wrapping mode.</string>
+	</dict>
+	
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The original image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+		<key>inputScaleX</key>
+		<dict>
+			<key>description</key>
+			<string>Scaling on the X-axis.</string>
+			<key>name</key>
+			<string>Scaling X</string>
+		</dict>
+		<key>inputScaleY</key>
+		<dict>
+			<key>description</key>
+			<string>Scaling on the Y-axis.</string>
+			<key>name</key>
+			<string>Scaling Y</string>
+		</dict>
+		<key>inputRotate</key>
+		<dict>
+			<key>description</key>
+			<string>Rotation amount.</string>
+			<key>name</key>
+			<string>Rotation</string>
+		</dict>
+		<key>inputTranslateX</key>
+		<dict>
+			<key>description</key>
+			<string>Translation amount on the X-axis.</string>
+			<key>name</key>
+			<string>Translation X</string>
+		</dict>
+		<key>inputTranslateY</key>
+		<dict>
+			<key>description</key>
+			<string>Translation amount on the Y-axis.</string>
+			<key>name</key>
+			<string>Translation Y</string>
+		</dict>
+	</dict>
+	
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>The resulting image.</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+	
+</dict>
+</plist>

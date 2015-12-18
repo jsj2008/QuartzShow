@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {addOperation = id; removeOperation = id; }; 
+            CLASS = CIMathUI; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = QCInspector; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
